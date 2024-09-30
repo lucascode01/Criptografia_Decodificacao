@@ -1,0 +1,477 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;
+\red83\green83\blue83;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c0\c1\c1;\cssrgb\c0\c0\c0\c84706;
+\cssrgb\c40044\c40044\c39994;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid201\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28300\viewh17700\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs32 \cf0 \cb2 Documenta\'e7\'e3o\
+\
+\
+Double\'92s = Vari\'e1veis tipo \'93\'94Double\'94\'94 que armazenam os coeficientes da fun\'e7\'e3o polinomial.:\
+\pard\pardeftab720\partightenfactor0
+
+\fs34 \cf0 \expnd0\expndtw0\kerning0
+a0 = 186.752
+\fs32 \
+
+\fs34 a1 = -148.235
+\fs32 \
+
+\fs34 a2 = 34.5049
+\fs32 \
+
+\fs34 a3 = -3.5091
+\fs32 \
+
+\fs34 a4 = 0.183166
+\fs32 \
+
+\fs34 a5 = -0.00513554
+\fs32 \
+
+\fs34 a6 = 0.0000735464
+\fs32 \
+
+\fs34 a7 = -4.22038e-7
+\fs32 \
+\
+\
+Main.C \{\
+\
+Func\'e3o \'93DecodificarMensagem\'94 1\{\
+\
+\
+1.Par\'e2metros:\
+		b - N\'famero inteiro fornecido pelo usu\'e1rio.\
+		Char *p = mensagemHex - Um ponteiro para iterar pela string hexadecimal. 	\
+\
+\
+2.Declara\'e7\'e3o de vari\'e1veis:\
+\
+	int x = 1; Um contador que come\'e7a em 1 e aumenta a  cada par de caracteres processados da mensagem hexadecimal\
+\
+	char *p = mensagemHex; Um ponteiro para iterar pela string hexadecimal	\
+\
+3. Loop(While):\
+	\
+	Percorre a string hexadecimal at\'e9 encontrar um \'91\\0\'92 ou quando restarem menos de 2 caracteres.\
+\
+4. Processamento de dois caracteres por vez: \
+	\
+	A cada itera\'e7\'e3o captura dois caracteres da string(Um byte hexadecimal). EX: 4F. Armazena em \'93hex\'94e converte esse par para seu valor decimal correspondente usando strtol(hei, NULL, 16)\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 O byte \'e9 composto por 8 (oito) bits, e \'e9 o necess\'e1rio para representar qualquer caractere (letras, n\'fameros, sinais de pontua\'e7\'e3o). Ent\'e3o, para representar a letra "a", por exemplo, \'e9 necess\'e1rio 1 byte, ou seja, 8 bits. Se um byte tem oito bits, existem 256 combina\'e7\'f5es poss\'edveis de bytes.\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf0 \
+\
+Func\'e3o strtol(String to long) - converter de hexadecimal (Base 16) para decimal (Base 10).\
+\
+Hex - String a ser convertida\
+NULL - Armazena o resto e ignora\
+16 - Base da convers\'e3o\
+\
+\
+\
+\
+\
+\
+\
+\
+\}1\
+\
+\
+\
+\
+\
+\
+\
+\}\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs53\fsmilli26667 \cf4 Documenta\'e7\'e3o:
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 Double\'92s = Vari\'e1veis tipo \'93Double\'94 que armazenam os coeficientes da fun\'e7\'e3o polinomial:\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 a0 = 186.752\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 a1 = -148.235\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 a2 = 34.5049\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 a3 = -3.5091\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 a4 = 0.183166\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 a5 = -0.00513554\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 a6 = 0.0000735464\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 a7 = -4.22038e-7\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 Main.C \{\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 Func\'e3o \'93DecodificarMensagem\'94 1\{\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs53\fsmilli26667 \cf4 1.Par\'e2metros:\
+
+\fs24 \cf4 \
+\pard\pardeftab720\fi960\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 b - N\'famero inteiro fornecido pelo usu\'e1rio.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 Char *p = mensagemHex - Um ponteiro para iterar pela string hexadecimal. 	\
+\pard\pardeftab720\li940\fi960\partightenfactor0
+\cf4 \
+\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs53\fsmilli26667 \cf4 2.Declara\'e7\'e3o de vari\'e1veis:\'a0\
+
+\fs24 \cf4 \
+\pard\pardeftab720\li940\fi-940\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 	int x = 1; Um contador que come\'e7a em 1 e aumenta a cada par de caracteres processados da mensagem hexadecimal\'a0
+\fs24 \cf4 \
+	
+\fs37\fsmilli18667 \cf4 char *p = mensagemHex; Um ponteiro para iterar pela string hexadecimal	\
+\pard\pardeftab720\li940\fi960\partightenfactor0
+\cf4 \
+\pard\pardeftab720\li940\fi960\partightenfactor0
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs53\fsmilli26667 \cf4 3. Loop (While):\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\li940\fi-940\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 	Percorre a string hexadecimal at\'e9 encontrar um \'91\\0\'92 ou quando restarem menos de 2 caracteres.\'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0\
+
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs48 \cf4 4. Processamento de dois caracteres por vez:\'a0\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\li940\fi-940\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 	A cada itera\'e7\'e3o captura dois caracteres da string (Um byte hexadecimal). EX: 4F. Armazena em \'93hex\'94 e converte esse par para seu valor decimal correspondente usando strtol(hei, NULL, 16)\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 O byte \'e9 composto por 8 (oito) bits, e \'e9 o necess\'e1rio para representar qualquer caractere (letras, n\'fameros, sinais de pontua\'e7\'e3o). Ent\'e3o, para representar a letra "a", por exemplo, \'e9 necess\'e1rio 1 byte, ou seja, 8 bits. Se um byte tem oito bits, existem 256 combina\'e7\'f5es poss\'edveis de bytes.\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\li940\fi-940\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 Fun\'e7\'e3o strtol(String to long) - converter de hexadecimal (Base 16) para decimal (Base 10).\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 Hex - String a ser convertida\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 NULL - Armazena o resto e ignora\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 16 - Base da convers\'e3o\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\li940\fi-940\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs53\fsmilli26667 \cf4 Explica\'e7\'e3o:\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs48 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \'a01. Bibliotecas:
+\f0\b0 \AppleTypeServices \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\li940\fi-940\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 	#include <math.h>: Importa fun\'e7\'f5es matem\'e1ticas da biblioteca math.h, como pow() e round().\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	#include "remove.h": Essa linha tenta incluir um arquivo de cabe\'e7alho chamado "remove.h". Como o c\'f3digo n\'e3o mostra o conte\'fado desse arquivo, n\'e3o fica claro o que ele faz.\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \
+2. Vari\'e1veis:
+\f0\b0 \AppleTypeServices \cf4 \'a0
+\fs24 \cf4 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\fs37\fsmilli18667 \cf4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf4 \expnd0\expndtw0\kerning0
+A0 at\'e9 a7: S\'e3o coeficientes constantes para o polin\'f4mio.\'a0
+\fs32 \cf4 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\fs37\fsmilli18667 \cf4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf4 \expnd0\expndtw0\kerning0
+resultado: Armazena o resultado do c\'e1lculo do polin\'f4mio.\'a0
+\fs32 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \
+3. C\'e1lculo:
+\f0\b0 \AppleTypeServices \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\fi960\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 O c\'f3digo calcula um polin\'f4mio da forma:\'a0\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 	   resultado = 
+\fs24 \cf4 {{\NeXTGraphic unknown.png \width8535 \height390 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\cf4 \
+\
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 	
+\fs37\fsmilli18667 \AppleTypeServices\AppleTypeServicesF65539 \cf4  \AppleTypeServices \cf4 A fun\'e7\'e3o pow(x, n) \'e9 usada para calcular pot\'eancias de x, onde n \'e9 o expoente.\'a0
+\fs24 \cf4 \
+	 
+\fs37\fsmilli18667 \cf4 O par\'e2metro b ajusta o coeficiente linear, somando-se a a1 no\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\fi960\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 c\'e1lculo.\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 4. Retorno:
+\f0\b0 \AppleTypeServices \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\fi960\partightenfactor0
+
+\fs37\fsmilli18667 \AppleTypeServices\AppleTypeServicesF65539 \cf4  \AppleTypeServices \cf4 A fun\'e7\'e3o retorna o valor arredondado (round ()) de resultado.\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \
+\
+Resumo: 
+\f0\b0\fs37\fsmilli18667 \AppleTypeServices \cf4 A fun\'e7\'e3o func_val avalia um polin\'f4mio de grau 7 com base nos coeficientes fixos e nos valores de entrada x e b, e retorna o resultado arredondado.\'a0\'a0\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf5 \'a0\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs53\fsmilli26667 \cf4 Explica\'e7\'e3o:\'a0\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 Bibliotecas:
+\f0\b0 \AppleTypeServices \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 	include <stdio.h>: Permite usar fun\'e7\'f5es de entrada/sa\'edda, como scanf e printf.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	include <stdlib.h>: Fornece fun\'e7\'f5es como strtol para convers\'e3o de strings.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	include <string.h>: Permite manipular strings.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	include "remove.h": Tenta incluir o arquivo de cabe\'e7alho "remove.h", mas seu prop\'f3sito n\'e3o \'e9 claro sem mais detalhes.\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \
+Fun\'e7\'e3o
+\f0\b0\fs37\fsmilli18667 \AppleTypeServices \cf4  decodificarMensagem:\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 	Par\'e2metros:\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	int b: Um valor inteiro que \'e9 usado na fun\'e7\'e3o func_val.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	char *mensagemHex: Uma string representando a mensagem codificada em hexadecimal.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	A fun\'e7\'e3o percorre a string hexadecimal (mensagemHex), processando dois caracteres por vez (cada par de caracteres representa um valor hexadecimal).\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	A fun\'e7\'e3o converte o par de caracteres em um valor inteiro (usando strtol), verifica se o valor \'e9 zero (indicando o final da mensagem), e, se n\'e3o for zero, utiliza a fun\'e7\'e3o func_val para determinar se o caractere deve ser impresso.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	Se func_val(x, b) for diferente de zero, o caractere correspondente ao valor hexadecimal \'e9 impresso.\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \
+\
+Fun\'e7\'e3o 
+\f0\b0\fs37\fsmilli18667 \AppleTypeServices \cf4 main:\
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 	L\'ea o n\'famero de testes (numTestes), e para cada teste:\'a0L\'ea um valor b e uma mensagem em hexadecimal.
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \cf4 	Chama a fun\'e7\'e3o decodificarMensagem para processar e decodificar a mensagem.\'a0
+\fs24 \cf4 \
+\pard\tx720\pardeftab720\partightenfactor0
+
+\f1\b\fs48 \AppleTypeServices\AppleTypeServicesF65539 \cf4 \kerning1\expnd0\expndtw0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf4 \expnd0\expndtw0\kerning0
+Resumo: 
+\f0\b0\fs37\fsmilli18667 \AppleTypeServices \cf4 O programa decodifica e imprime mensagens em hexadecimal, dependendo de uma fun\'e7\'e3o func_val, que parece atuar como um filtro de caracteres com base nos par\'e2metros x (um contador) e b.\'a0
+\fs48 \cf4 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\fs32 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs53\fsmilli26667 \cf4 Explica\'e7\'e3o:\'a0
+\fs24 \cf4 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\fs37\fsmilli18667 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\fs37\fsmilli18667 \AppleTypeServices\AppleTypeServicesF65539 \cf4 	
+\fs42\fsmilli21333 \AppleTypeServices \cf4 ifndef REMOVE_H: Verifica se o identificador REMOVE_H n\'e3o foi definido anteriormente. Se ainda n\'e3o tiver sido definido, o c\'f3digo a seguir ser\'e1 processado.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \AppleTypeServices\AppleTypeServicesF65539 \cf4  \
+
+\fs42\fsmilli21333 \AppleTypeServices \cf4 	define REMOVE_H: Define o identificador REMOVE_H. Isso indica que o arquivo j\'e1 foi inclu\'eddo, para que futuras inclus\'f5es sejam ignoradas.\'a0
+\fs24 \cf4 \
+
+\f1\b\fs37\fsmilli18667 \AppleTypeServices\AppleTypeServicesF65539 \cf4  \
+
+\f0\b0\fs42\fsmilli21333 \AppleTypeServices \cf4 	int func_val(int x, int b);: Declara\'e7\'e3o de uma fun\'e7\'e3o chamada func_val, que aceita dois par\'e2metros inteiros x e b, retornando um inteiro.\'a0
+\fs24 \cf4 \
+
+\fs37\fsmilli18667 \AppleTypeServices\AppleTypeServicesF65539 \cf4  \
+
+\fs42\fsmilli21333 \AppleTypeServices \cf4 	endif /* REMOVE_H */: Fecha o bloco condicional iniciado por #ifndef.\'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+\pard\pardeftab720\partightenfactor0
+
+\fs42\fsmilli21333 \cf4 Objetivo:\'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 Essa t\'e9cnica impede que o compilador processe o conte\'fado do arquivo de cabe\'e7alho mais de uma vez em um projeto que inclua o mesmo cabe\'e7alho em m\'faltiplos arquivos. Isso evita erros de redefini\'e7\'e3o e economiza tempo de compila\'e7\'e3o.\'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0
+\fs24 \cf4 \
+
+\fs42\fsmilli21333 \cf4 \'a0}
